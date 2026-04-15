@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Flask Auth</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="dashboard-body">
+
+    <nav class="navbar">
+        <div class="brand">🔐 Flask Auth App</div>
+        <div class="user-info">
+            <span class="username">👤 {{ user }}</span>
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-content">
+        <div class="welcome-card">
+            <h2>Welcome, {{ user }}! 🎉</h2>
+            <p>You are now logged in to the protected dashboard. This page is only accessible to authenticated users. If you try to visit this URL without logging in, you will be redirected to the login page.</p>
+            <div class="badges">
+                <span class="badge">✅ Authenticated</span>
+                <span class="badge">🔒 Session Active</span>
+                <span class="badge">🛡️ Protected Route</span>
+            </div>
+        </div>
+
+        <div class="info-cards">
+            <div class="info-card">
+                <h3>🔑 Password Security</h3>
+                <p>Your password is stored as a secure hash using Werkzeug — never in plain text.</p>
+            </div>
+            <div class="info-card">
+                <h3>🍪 Session Management</h3>
+                <p>Flask sessions keep you logged in securely using a signed cookie tied to the server's secret key.</p>
+            </div>
+            <div class="info-card">
+                <h3>🚪 Access Control</h3>
+                <p>Unauthenticated users are automatically redirected away from this page to the login screen.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
