@@ -103,3 +103,4 @@ User → /logout → Clear session → Redirect to /login
 **Program**: Python Full Stack Web Development  
 **Organization**: Maincrafts Technology  
 **Task**: Task 2 — User Authentication System
+# python-fullstack-task2
