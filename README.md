@@ -99,7 +99,7 @@ User → /logout → Clear session → Redirect to /login
 ---
 
 ## 👤 Author
-**Intern Name**: [Your Name]  
+**Intern Name**: Mohammed Rishan  
 **Program**: Python Full Stack Web Development  
 **Organization**: Maincrafts Technology  
 **Task**: Task 2 — User Authentication System
